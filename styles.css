@@ -1,4 +1,40 @@
+
+/* * {
+  border: 
+} */
+
 body {
-    background-color: rgb(245, 242, 157);
+  background-color: rgb(208, 195, 10);
+}
+
+#top-section {
+  background-color: rgb(0, 174, 255);
+}
+
+  h1 {
+    background-color: rgb(221, 212, 109);
+   border-block-style: solid;
   }
+
+  h2 {
+    border-style: solid
+  }
+
   
+#bottom-section {
+border-style: solid;
+display: flex
+}
+
+.helpful-advice{
+  background-color: burlywood;
+border: 2px solid maroon
+}
+
+.helpful-advice h4{
+  margin-left: 20px;
+}
+
+header h1{
+  font-style: italic;
+}
