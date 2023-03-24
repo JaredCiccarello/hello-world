@@ -23,7 +23,7 @@
 
     function userName
        
-    let userName = prompt ('What should I call you?');
+    // let userName = prompt ('What should I call you?');
 
     if (usersName == ""){
         usersName = prompt ("Hey! That's not a name!")
