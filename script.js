@@ -2,40 +2,43 @@
 // const mydiv=document.getElementById('input-prompt')
 
 
+let userName;
     
+function getUserName(){
+        userName = prompt ('What should I call you?');
+        
+        if (userName == ""){
+            alert ("Hey! That's not a name!")
+            getUserName()
+        } else {
+            document.write(" " + userName + "That's my mother's name actually");
+            console.log(userName);
+        }
+        
+        
+    }
+    getUserName()
+
+
     function welcomeUser(){
     
-    let breath = prompt("Have you taken a break today? Type only Yes or No. Y E S or N O");
-                            // || (this is an OR)
-        while (breath == 'no' || breath == 'yes' || breath == 'YES' || breath == 'NO'){
-
-            breath = prompt ("Remember it can only be Yes or No");
+    let breath = prompt(userName + " Have you taken a break today? Type only Yes or No. Y E S or N O");
+    console.log(breath)
+        if (breath !== 'no' && breath !== 'yes'){
+            alert ("Remember it can only be Yes or No");
+            welcomeUser()
         }
 
-    if (breath == 'Yes'){
-        document.write("Great! Let's show you some extra tips on how simple changes can brighten your day!");
-    } else if (breath == 'No'){
-        document.write("I think I can help!");
-    }  else if (breath == ''){
-        document.write("That's okay, you don't have to tell me")
-    }
-    }
-
-    function userName
-       
-    // let userName = prompt ('What should I call you?');
-
-    if (usersName == ""){
-        usersName = prompt ("Hey! That's not a name!")
+    // if (breath === 'yes'){
+    //     document.write("Great! Let's show you some extra tips on how simple changes can brighten your day!");
+    // } else {
+    //     document.write("I think I can help!");
+    // }  
+}   
+ welcomeUser();
 
 
-    document.write(" " + usersName + "That's my mother's name actually");
 
-    console.log(usersName);
-    }
-
-
-    welcomeUser();
 
     let newBornBabyAge = prompt ("Guess a New Born Babies age")
 
@@ -57,7 +60,7 @@
     //         answer = prompt ('Hoorah!')
     //     document.write(answer);
     //     }
-    
+
 
     
 
